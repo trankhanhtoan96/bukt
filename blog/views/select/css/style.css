@@ -1,0 +1,62 @@
+section .demo {
+	text-align: center;
+}
+
+section .demo .demo-image-wrap {
+	background: url(../images/monitor.png) center no-repeat;
+	position: relative;
+    background-size: contain;
+}
+
+section .demo .demo-image {
+	position: absolute;
+    left:5.42%;
+    top:6%;
+    width: 89.4%;
+    height: 58.9%;
+    border: 1px solid #aaa;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	margin: 0 auto;
+	-webkit-transition: all 0.5s linear 0s; /* Safari and Chrome */
+       -moz-transition: all 0.5s linear 0s; /* Firefox 4 */
+         -o-transition: all 0.5s linear 0s; /* Opera */
+            transition: all 0.5s linear 0s;
+}
+section .demo-fixed .demo-image {
+	background-size: 100% 100%;
+}
+
+section .demo1 .demo-image { background-image: url(../images/demo_01.jpg); }
+section .demo2 .demo-image { background-image: url(../images/demo_02.jpg); }
+section .demo3 .demo-image { background-image: url(../images/demo_03.jpg); }
+section .demo4 .demo-image { background-image: url(../images/demo_04.jpg); }
+section .demo5 .demo-image { background-image: url(../images/demo_05.jpg); }
+section .demo6 .demo-image { background-image: url(../images/demo_06.jpg); }
+section .demo-link:hover .demo-image {
+	background-position: center bottom;
+	-webkit-transition: all 5s linear 0s; /* Safari and Chrome */
+       -moz-transition: all 5s linear 0s; /* Firefox 4 */
+         -o-transition: all 5s linear 0s; /* Opera */
+            transition: all 5s linear 0s;
+}
+section .demo .demo-link {
+    display: block;
+    position: relative;
+	margin: 35px 5px 0;
+    text-decoration: none;
+}
+
+section .demo .demo-link2 {
+    display: block;
+    position: relative;
+	margin: 5px 5px 0;
+    text-decoration: none;
+}
+
+section .demo h3 {
+    font-size: 21px;
+    font-family: "Judson";
+	margin: 15px 0 5px;
+}

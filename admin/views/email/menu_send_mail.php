@@ -1,0 +1,2 @@
+<button type="submit" class="btn btn-primary"><?= lang('send') ?></button>
+<a href="<?= site_url($this->router->class.'/index') ?>" onclick="return confirm(CI_language.confirm_cancel)" class="btn btn-default"><?= lang('cancel') ?></a>
