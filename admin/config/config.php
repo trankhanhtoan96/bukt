@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-date_default_timezone_set('Asia/Ho_Chi_Minh');
+date_default_timezone_set($GLOBALS['custom_config']['timezone']);
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
@@ -23,7 +23,7 @@ date_default_timezone_set('Asia/Ho_Chi_Minh');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/web/';
+$config['base_url'] = $GLOBALS['custom_config']['base_url'];
 
 /*
 |--------------------------------------------------------------------------
@@ -76,7 +76,7 @@ $config['url_suffix'] = '';
 | than english.
 |
 */
-$config['language']	= 'vi';
+$config['language']	= $GLOBALS['custom_config']['language'];
 
 /*
 |--------------------------------------------------------------------------

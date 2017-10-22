@@ -93,6 +93,11 @@ class CI_Controller
             $this->config->set_item('language', get_cookie('language', true));
         }
         //end load language to display
+
+        //set base_url to cookie
+        if (!get_cookie('baseurl', true)) {
+            set_cookie('baseurl', $this->config->item('base_url'), 2592000);
+        }
     }
     // --------------------------------------------------------------------
 

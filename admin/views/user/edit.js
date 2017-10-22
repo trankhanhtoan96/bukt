@@ -7,7 +7,7 @@ $(document).ready(function() {
 $('#btn_choose_avatar').on('click', function () {
     CKFinder.popup({
         resourceType : 'Images',
-        language:CI_language.language=='vn'?'vi':'',
+        language:CI_language.language,
         selectActionFunction: function (fileUrl, data, allFiles) {
             var ext = getExt(fileUrl);
             if (ext == 'jpg' || ext == 'png') {

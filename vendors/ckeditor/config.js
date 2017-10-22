@@ -36,7 +36,7 @@ CKEDITOR.editorConfig = function (config) {
     config.extraPlugins = 'justify';
 
     // config ckfinder
-    var duong_dan = 'http://localhost/web/vendors/';
+    var duong_dan = CI_language.base_url + 'vendors/';
     config.filebrowserBrowseUrl = duong_dan + 'ckfinder/ckfinder.html&langCode=vi';
     config.filebrowserImageBrowseUrl = duong_dan + 'ckfinder/ckfinder.html?type=Images&langCode=vi';
     config.filebrowserUploadUrl = duong_dan + 'ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files&langCode=vi';
